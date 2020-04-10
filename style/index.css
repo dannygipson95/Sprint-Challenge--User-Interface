@@ -31,10 +31,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-.topHead{
-    display: flex;
-    
-}
+
 ol, ul {
 	list-style: none;
 }
@@ -55,9 +52,53 @@ table {
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%
+}
+
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+}
+/* header */
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.topHeader {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 5% 10%;
+}
+
+.jumbo {
+    width: 90%;
+
+}
+
+.topNav{
+    display: flex;
+    width: 75%;
+    justify-content: space-evenly;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1, h2, h3, h4, h5 {
@@ -68,11 +109,15 @@ h1, h2, h3, h4, h5 {
 
 p {
     line-height: 1.4;
+    font-size: 1.2rem;
 }
 
 .container {
-    width: 800px;
-    margin: 0 auto;
+    width: 90%;
+    margin:5% 10%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
 
 .top-content {
@@ -98,6 +143,52 @@ p {
     padding: 0 2%;
     margin-bottom: 0;
 }
+/* box colors */
+#one {
+    background: teal;
+}
+
+#two {
+    background: gold;
+}
+
+#three {
+    background: cadetblue;
+}
+
+#four {
+    background: coral;
+}
+
+#five {
+    background: crimson;
+}
+
+#six {
+    background: forestgreen;
+}
+
+#seven {
+    background: darkorchid;
+}
+
+#eight {
+    background: hotpink;
+}
+
+#nine {
+    background: indigo;
+}
+
+#ten {
+    background: dodgerblue;
+}
+
+/* box styling */
+.box {
+    width: 10%;
+    height: 10%;
+}
 
 .middle-content .boxes {
     display: flex;
@@ -115,7 +206,7 @@ p {
     align-items: center;
     justify-content: center;
 }
-
+/* footer styling */
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -147,4 +238,74 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media (max-width: 800px){
+    .topHeader{
+        flex-direction: column;
+    }
+    .jumbo{
+        width: 100%;
+    }
+    footer nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+/* Phone styling */
+@media(max-width: 500px){
+/* header styling for phone */
+    header{
+        height: 85%;
+    }
+
+    .topHeader{
+        flex-direction: column;
+    }
+
+    .lambda-black{
+        padding-bottom: 10%;
+    }
+
+    .topNav{
+        flex-direction: column;
+        justify-items: space-between;
+        align-items: center;
+    }
+
+    .topNav a{
+        color: lightgray;
+        border: 2px solid lightgray;
+        border-radius: 8%;
+        width: 80%;
+        text-align: center;
+    }
+
+    .topNav .home {
+        color: black;
+        background: lightgray;
+        border: 2px solid black;
+    }
+
+    .jumbo {
+        width: 100%;
+    }
+
+/* body phone styling */
+
+    .top-content{
+        flex-direction: column;
+    }
+
+    .top-content .text-container{
+        width: 100%;
+
+    }
+
+    .boxes{
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
