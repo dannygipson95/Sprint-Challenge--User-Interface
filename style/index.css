@@ -244,6 +244,11 @@ footer nav a {
     .topHeader{
         flex-direction: column;
     }
+
+    .topNav{
+        width: 100%;
+        padding-top: 5%;
+    }
     .jumbo{
         width: 100%;
     }
@@ -251,6 +256,9 @@ footer nav a {
         width: 100%;
         display: flex;
         justify-content: space-between;
+    }
+    .middle-content .boxes .box {
+        width: 20%;
     }
 }
 /* Phone styling */
@@ -307,5 +315,7 @@ footer nav a {
         flex-direction: column;
         align-items: center;
     }
-
+    .middle-content .boxes .box {
+        width: 40%;
+    }
 }
